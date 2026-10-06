@@ -3,11 +3,11 @@
 // Paths are relative to this folder, e.g. 'C04-S01-my-sound.wav'.
 // ═══════════════════════════════════════════════════════════════════════════════
 const SOUNDS = [
-  'Sounds/C04-S01-quietCutG-fav.wav',
-  'Sounds/C04-S02-frightenedG.mp3',
-  'Sounds/c04-S03-scaryG.mp3',
-  'Sounds/C04-S04-SlowCardDealing.mp3',
-  'Sounds/C04-S05-tonedLazyShuffle.mp3',
+  'assets/C04-S01-quietCutG-fav.wav',
+  'assets/C04-S02-frightenedG.mp3',
+  'assets/c04-S03-scaryG.mp3',
+  'assets/C04-S04-SlowCardDealing.mp3',
+  'assets/C04-S05-tonedLazyShuffle.mp3',
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════════
