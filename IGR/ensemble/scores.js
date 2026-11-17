@@ -51,6 +51,7 @@ const SOUND_DIR = '../assets/';
 const LOOP_SOUNDS = [
   'demo/1', 'demo/2', 'demo/3', 'demo/4', 'demo/5',
   'demo/karateka', 'demo/door', 'demo/wall-thump', 'demo/cowbell-minipops',
+  'kaim-bit/C09_S01_windyNew', 'kaim-bit/C09_S02_windPush', 'kaim-bit/C09_S03_LaserShift', 'kaim-bit/C09_S04_clownCountry', 'kaim-bit/C09_S05_burgu_FAV',
 ];
 
 // Credit line for every score made from the Productions Totem Contemporain sounds
@@ -58,44 +59,25 @@ const PTC_CREDIT = 'The work has been produced with sounds that were originally 
 
 const SCORES = [
   {
-    title: 'Rain Study I',
-    credit: "All recordings by Gabriel Vigliensoni.",
+    title: 'Windy Day',
+    credit: "Kai Maquivar",
     groups: 4,
     events: [
       // Sound 1 in A, B and C: each group spreads slowly, groups stay together
-      { at: '0:00', groups: 'B', play: 'demo/1', ratio: 1.01, fade: 5 },
-      // The groups start drifting against each other too
-      { at: '0:20', spread: 1.04, glide: 30 },
-      // At 2:00 sound 2 fades in on D over a minute…
-      { at: '0:10', groups: 'C', play: 'demo/3', ratio: 1.010, fade: 10 },
-      { at: '0:15', groups: 'D', play: 'demo/5', ratio: 1.020, fade: 10 },
-      { at: '0:20', groups: 'A', play: 'demo/5', ratio: 1.020, fade: 10 },
+      { at: '0:00', groups: 'A', play: 'kaim-bit/C09_S01_windyNew', ratio: 0.4, fade: 5 },
+      { at: '0:10', groups: 'A', stop: 'kaim-bit/C09_S01_windyNew', fade: 5 },
+      { at: '0:10', groups: 'B', play: 'kaim-bit/C09_S03_LaserShift', ratio: 0.4, fade: 5 },
+      { at: '0:20', groups: 'D', play: 'kaim-bit/C09_S05_burgu_FAV', ratio: 0.1, fade: 10 },
+      { at: '0:22', groups: 'B', stop: 'kaim-bit/C09_S03_LaserShift', fade: 5 },
+      { at: '0:27', groups: 'C', play: 'kaim-bit/C09_S04_clownCountry', ratio: 2, fade: 10 },
+      { at: '0:27', groups: 'D', stop: 'kaim-bit/C09_S05_burgu_FAV', ratio: 0.1, fade: 10 },
+      { at: '0:29', groups: 'A', play: 'kaim-bit/C09_S01_windyNew', ratio: 0.1, fade: 5 },
+      { at: '0:40', groups: 'ABCD', stop: 'all', fade: 20 },
+      { at: '0:50', groups: 'all', play: 'kaim-bit/C09_S02_windPush', fade: 4 },
 
-      // …while A, B, C crossfade from sound 1 to sound 2 over the same minute
-      { at: '0:40', groups: 'D', stop: 'demo/5', fade: 2 },
-      { at: '0:42', groups: 'A', stop: 'demo/5', fade: 2 },
-      { at: '0:43', groups: 'C', stop: 'demo/3', fade: 2 },
-      { at: '0:55', groups: 'C', play: 'demo/3', ratio: 1.010, fade: 10 },
-      { at: '0:56', groups: 'D', play: 'demo/5', ratio: 1.020, fade: 10 },
-      { at: '0:56', groups: 'A', play: 'demo/5', ratio: 1.020, fade: 10 },
-      { at: '1:10', groups: 'D', stop: 'demo/5', fade: 2 },
-      { at: '1:10', groups: 'A', stop: 'demo/5', fade: 5 },
-      { at: '1:10', groups: 'C', stop: 'demo/3', fade: 5 },
-
-      { at: '1:20', groups: 'B', stop: 'demo/1', ratio: 1.01, fade: 5 },
-      { at: '1:25', groups: 'C', play: 'demo/6', ratio: 1, fade: 20 },
-      { at: '1:25', groups: 'AD', play: 'demo/2', ratio: 1, fade: 2 },
-
-      { at: '1:45', groups: 'B', play: 'demo/1', ratio: 1, fade: 20 },
-      { at: '1:50', groups: 'A', play: 'demo/3', ratio: 1, fade: 20 },
-      { at: '1:50', groups: 'C', stop: 'demo/6', ratio: 1, fade: 50 },
-
-
-      // Sound 3 enters on A and C only, frozen
-      { at: '2:30', groups: 'AC', play: 'demo/3', fade: 10, level: 0.8 },
-      { at: '2:30', groups: 'all', stop: 'all', fade: 10 },
+      { at: '1:00', groups: 'all', stop: 'all', fade: 10 },
     ],
-    end: '2:35',
+    end: '1:10',
   },
 
   {
