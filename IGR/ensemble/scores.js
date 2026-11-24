@@ -65,24 +65,50 @@ const SCORES = [
     groups: 4,
     events: [
       // Sound 1 in A, B and C: each group spreads slowly, groups stay together
-      { at: '0:00', groups: 'A', play: 'kaim-bit/S01-C10-weirdufo-002', ratio: 0.4, fade: 5 },
-      { at: '1:00', groups: 'A', stop: 'kaim-bit/S01-C10-weirdufo-002', fade: 5 },
+      { at: '0:00', groups: 'A', play: 'kaim-bit/S01-C10-weirdufo-002', ratio: 5, fade: 0 },
+      { at: '0:5', groups: 'A', stop: 'kaim-bit/S01-C10-weirdufo-002', fade: 5 },
+
+      { at: '0:22', groups: 'A', play: 'kaim-bit/S01-C10-weirdufo-002', ratio: 0.1, fade: 0 },
+      { at: '0:24', groups: 'A', stop: 'kaim-bit/S01-C10-weirdufo-002', fade: 5 },
+
+      { at: '0:34', groups: 'A', play: 'kaim-bit/S04-C10-beast_snore-002', ratio: 0.1, fade: 0 },
+      { at: '0:37', groups: 'A', stop: 'kaim-bit/S04-C10-beast_snore-002', fade: 5 },
+
+
       {
-        at: '0:12', groups: 'D', play: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.4, fade: 5
+        at: '0:05', groups: 'D', play: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.4, fade: 0
       },
-      { at: '0:30', groups: 'D', stop: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.9, fade: 5 },
+      { at: '1:10', groups: 'D', stop: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.9, fade: 5 },
 
-      { at: '0:10', groups: 'B', play: 'kaim-bit/S04-C10-beast_snore-002', ratio: 0.1, fade: 0 },
-      { at: '0:20', groups: 'D', play: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.1, fade: 10 },
+      {
+        at: '0:15', groups: 'C', play: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 2, fade: 0
+      },
+      { at: '0:18', groups: 'C', stop: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 0.4, fade: 5 },
+      {
+        at: '0:42', groups: 'C', play: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 2, fade: 0
+      },
+      { at: '0:46', groups: 'C', stop: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 0.4, fade: 5 },
 
-      { at: '0:16', groups: 'B', stop: 'kaim-bit/S04-C10-beast_snore-002', fade: 0 },
-      { at: '0:27', groups: 'C', play: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 2, fade: 10 },
-      { at: '0:27', groups: 'D', stop: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.1, fade: 10 },
-      { at: '0:29', groups: 'A', play: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 0.1, fade: 5 },
-      { at: '0:40', groups: 'ABCD', stop: 'all', fade: 20 },
-      { at: '0:50', groups: 'all', play: 'kaim-bit/S04-C10-beast_snore-002', fade: 4 },
+      {
+        at: '0:40', groups: 'B', play: 'kaim-bit/S03-C10-beast_crunch-002', ratio: 1, fade: 0
+      },
+      { at: '0:43', groups: 'B', stop: 'kaim-bit/S03-C10-beast_crunch-002', ratio: 0.4, fade: 5 },
+      {
+        at: '1:00', groups: 'B', play: 'kaim-bit/S03-C10-beast_crunch-002', ratio: 1, fade: 0
+      },
+      { at: '1:03', groups: 'B', stop: 'kaim-bit/S03-C10-beast_crunch-002', ratio: 0.4, fade: 5 },
 
-      { at: '1:00', groups: 'all', stop: 'all', fade: 10 },
+
+
+
+      // { at: '0:16', groups: 'B', stop: 'kaim-bit/S04-C10-beast_snore-002', fade: 0 },
+      // { at: '0:27', groups: 'C', play: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 2, fade: 10 },
+      // { at: '0:27', groups: 'D', stop: 'kaim-bit/S05-C10-swamp_noises-002', ratio: 0.1, fade: 10 },
+      // { at: '0:29', groups: 'A', play: 'kaim-bit/S02-C10-creepybite_FAV-002', ratio: 0.1, fade: 5 },
+      // { at: '0:40', groups: 'ABCD', stop: 'all', fade: 20 },
+      // { at: '0:50', groups: 'all', play: 'kaim-bit/S04-C10-beast_snore-002', fade: 4 },
+
+      // { at: '1:00', groups: 'all', stop: 'all', fade: 10 },
     ],
     end: '1:10',
   },
